@@ -1,5 +1,5 @@
 # Class-Imbalance-Classification-Performance-Analysis
-This repository contains the code, project report, and datasets for a comprehensive exploration of machine learning techniques to address class imbalance. The project investigates the impact of various methods, including ADASYN, KMeansSMOTE, and Deep Learning Generator, on classification performance using three real-world datasets. Implemented in Python and utilizing Jupyter Notebooks for experimentation and analysis, this repository offers detailed documentation and insights, along with the necessary datasets for reproduction of the results.
+This repository contains the code, project report, and datasets for a comprehensive exploration of machine learning techniques to address class imbalance. The project investigates the impact of various methods, including ADASYN, KMeansSMOTE, and Deep Learning Generator, on classification performance using three real-world datasets. Implemented in Python and utilizing Jupyter Notebooks for experimentation and analysis, this repository offers detailed documentation and insights, along with the necessary datasets for reproduction of the results. 
 
 ### Project Objectives:
 • Explore and compare the performance of ADASYN, KMeansSMOTE, and a Deep Learning Generator in addressing class imbalance.
@@ -20,6 +20,9 @@ This repository contains the code, project report, and datasets for a comprehens
 
 ### Following Evaluation Metrics Are Selected For This Project:
 • Precision (Both Classes), Recall (Both Classes), F1-Score (Both Classes), Accuracy, & AUC
+
+### Pipeline Implementation:
+To efficiently test multiple class imbalance techniques on multiple datasets, a master function and supporting functions have been created to streamline the workflow. This pipeline automates the process of fetching data, data cleaning, EDA, data transformation, feature selection, data splitting and CV, model learning, hyperparameter tuning, and model evaluation. First pipiline is used to get a baseline for each dataset and then after applying each class imbalance technique on each of the datasets pipeline is deployed again and again and the results of each approach are compiled with the baseline for comparison. The modular structure allows for easy extension and modification, facilitating comprehensive experimentation and analysis. For future work, this pipeline can be modified to enable more advance data imputation techniques, more robust CV approach, and usage of GridSearch for tuning of hyperparameters.
 
 ## Following Three Datasets Are Selected For This Project:
 ### Dataset 1
